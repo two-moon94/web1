@@ -5,8 +5,7 @@
   <meta charset="utf-8">
 </head>
 <body>
-  <h1>Trainers Information</h1>
-  <img src="img/1.jpg" alt="최윤철" height="300" width="300">
+  <h3>평가하기</h3>
   <script>
     var trainers = {
       "name" : "최윤철",
@@ -25,19 +24,16 @@
 
   <div>
     <script>
-      document.write("이름: " +trainers.name+"("+trainers.sex+")<br>");
-      document.write("카카오톡: " +trainers.kakaoid+"<br>");
-      document.write("헬스장: "+trainers.centername+"<br>");
-      document.write("<hr>");
-      document.write("트레이너님 장점에 대한 한줄평 <br>")
-      var i = 0;
-      while(i < trainers.comments.length){
-        document.write(i+1+"."+trainers.comments[i]+"<br>");
-        i = i + 1;
-      }
+      document.write(trainers.centername+" <b>"+trainers.name+"</b>"+"("+trainers.sex+") 트레이너님<br>");
+      document.write("<br>")
+      document.write("pt 받기 전 운동 경력<br>")
+      document.write("PT 도움 정도 평가<br>")
+
       document.write()
     </script>
-    <a href="rate.html">한줄평 쓰기</a>
+
+    <a href="index.html">제출하기</a>
+
     
   </div>
 
